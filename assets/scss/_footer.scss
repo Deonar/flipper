@@ -1,2 +1,42 @@
 .footer {
+  background: #fff;
+  &-body {
+    position: relative;
+    margin-top: 160px;
+  }
+  &-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 630px;
+    height: 100%;
+    background: url(../img/footer-bg.svg) bottom right no-repeat;
+    background-size: contain;
+  }
+  &-bottom {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+    margin-top: 100px;
+  }
+  &-form {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+  &-policy {
+    margin: 0 20px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &-tel {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
