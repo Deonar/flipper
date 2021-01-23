@@ -14,37 +14,59 @@
   <!-- <header id="header" class="header">
     <div class="header-container">
       <div class="header-body">
+        <div class="header-burger__wrapper" id="header-burger">
+          <div class="header-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
         <a href="#" class="header-logo">
           <img src="assets/img/logo.svg" alt="" />
         </a>
-        <div class="header-menu__wrapp">
+        <div id="mobMenu" class="header-menu__wrapp">
+          <div class="header__select-lang select select-custom-js header__mob-conten">
+            <div class="select__header">
+              <span class="select__current">
+                <img src="assets/img/ru.svg" alt="" />
+                RU
+              </span>
+              <input type="hidden" name="lang" />
+            </div>
+            <div class="select__body">
+              <div class="select__item" data-select-value="1"><img src="assets/img/kz.svg" alt="" /> KZ</div>
+              <div class="select__item" data-select-value="2"><img src="assets/img/en.svg" alt="" /> EN</div>
+              <div class="select__item" data-select-value="3"><img src="assets/img/ru.svg" alt="" /> RU</div>
+            </div>
+          </div>
           <ul class="header-menu">
-            <li><a href="#">Об устройстве</a></li>
-            <li><a href="#">Как работает</a></li>
-            <li><a href="#">Панель управления</a></li>
-            <li><a href="#">Стоимость</a></li>
+            <li><a class="close-mob-menu-js" href="#">Об устройстве</a></li>
+            <li><a class="close-mob-menu-js" href="#">Как работает</a></li>
+            <li><a class="close-mob-menu-js" href="#">Панель управления</a></li>
+            <li><a class="close-mob-menu-js" href="#">Стоимость</a></li>
           </ul>
+          <a href="#" class="header-btn header__mob-conten close-mob-menu-js">Войти</a>
         </div>
-        <div class="header-contact__wrapp">
-          <div class="base-locale-block header__locales">
-            <span class="base-locale base-locale--modified"
-              >UA
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon base-locale_arrow">
-                <path d="M1.11137 5.35355C0.916104 5.15829 0.916104 4.84171 1.11137 4.64645C1.30663 4.45118 1.62321 4.45118 1.81847 4.64645L5.35401 8.18198C5.54927 8.37724 5.54927 8.69383 5.35401 8.88909C5.15874 9.08435 4.84216 9.08435 4.6469 8.88909L1.11137 5.35355Z" fill="currentColor"></path>
-                <path d="M8.18243 4.64645C8.3777 4.45118 8.69428 4.45118 8.88954 4.64645C9.0848 4.84171 9.0848 5.15829 8.88954 5.35355L5.35401 8.88909C5.15874 9.08435 4.84216 9.08435 4.6469 8.88909C4.45164 8.69383 4.45164 8.37724 4.6469 8.18198L8.18243 4.64645Z" fill="currentColor"></path>
-              </svg>
-            </span>
-            <div class="base-locale-dropdown">
-              <div class="base-locale-dropdown_item">
-                <a href="/ru"><span>RU</span></a>
-              </div>
-              <div class="base-locale-dropdown_item">
-                <a href="/en"><span>EN</span></a>
-              </div>
+        <div class="header-options">
+          <div class="header__select-lang select select-custom-js">
+            <div class="select__header">
+              <span class="select__current">
+                <img src="assets/img/ru.svg" alt="" />
+                RU
+              </span>
+              <input type="hidden" name="lang" />
+            </div>
+            <div class="select__body">
+              <div class="select__item" data-select-value="1"><img src="assets/img/kz.svg" alt="" /> KZ</div>
+              <div class="select__item" data-select-value="2"><img src="assets/img/en.svg" alt="" /> EN</div>
+              <div class="select__item" data-select-value="3"><img src="assets/img/ru.svg" alt="" /> RU</div>
             </div>
           </div>
           <div class="header-contact">
             <a href="tel:+88009774422" class="contact-tell">8 800 977 44 22</a>
+            <a href="tel:+88009774422" class="contact-tell__icon">
+              <img src="assets/img/icons/tell.svg" alt="" />
+            </a>
           </div>
           <a href="#" class="header-btn">Войти</a>
         </div>
@@ -265,14 +287,246 @@
     </div>
   </div>
 
-  <div class="front-page"></div>
+  <div class="front-page">
+    
+    <section class="panel">
+      <div class="container-fluid">
+        <div class="panel-body">
+          <div class="panel-row">
+            <div class="panel-left__content"></div>
+            <div class="panel-content">
+              <h1 class="panel-title">
+                Для удобства работы с Flipper <br />
+                мы разработали <span>панель управления</span>
+              </h1>
+              <div class="panel-text">Вы можете формировать наглядные отчеты по Вашим приборам, следить за их текущей геолокацией и просматривать показания тестов в любое удобное для Вас время на экране Вашего смартфона или ПК.</div>
+            </div>
+            <div class="panel-right__content"></div>
+          </div>
+          <div class="panel-row">
+            <div class="panel-left__content">
+              <div class="panel-left__title">
+                Возможности <br />
+                панели <br />
+                управления
+              </div>
+            </div>
+            <div class="panel-content">
+              <ul class="panel-options__list">
+                <li class="panel-options__item">
+                  <img src="assets/img/icons/panel-options/option-1.svg" alt="" class="panel-options__item-icon" />
+                  <div class="panel-options__item-title">
+                    Информация <br />
+                    о тестах
+                  </div>
+                  <div class="panel-options__item-text">Получайте подробную информацию о каждом тесте</div>
+                </li>
+                <li class="panel-options__item">
+                  <img src="assets/img/icons/panel-options/option-2.svg" alt="" class="panel-options__item-icon" />
+                  <div class="panel-options__item-title">
+                    Информация <br />
+                    об устройствах
+                  </div>
+                  <div class="panel-options__item-text">Получайте подробную информацию об устройстве</div>
+                </li>
+                <li class="panel-options__item">
+                  <img src="assets/img/icons/panel-options/option-3.svg" alt="" class="panel-options__item-icon" />
+                  <div class="panel-options__item-title">
+                    Настройка <br />
+                    уведомлений
+                  </div>
+                  <div class="panel-options__item-text">Telegram / E-mail / API Callback URL</div>
+                </li>
+                <li class="panel-options__item">
+                  <img src="assets/img/icons/panel-options/option-4.svg" alt="" class="panel-options__item-icon" />
+                  <div class="panel-options__item-title">
+                    Отслеживание <br />
+                    местонахождения
+                  </div>
+                  <div class="panel-options__item-text">Отслеживайте местонахождение прибора и геолокацию теста</div>
+                </li>
+                <li class="panel-options__item">
+                  <img src="assets/img/icons/panel-options/option-5.svg" alt="" class="panel-options__item-icon" />
+                  <div class="panel-options__item-title">
+                    Интеграция <br />
+                    с сервисами
+                  </div>
+                  <div class="panel-options__item-text">Настраивайте API-интеграцию с любыми сервисами</div>
+                </li>
+                <li class="panel-options__item">
+                  <img src="assets/img/icons/panel-options/option-5.svg" alt="" class="panel-options__item-icon" />
+                  <div class="panel-options__item-title">
+                    Выгрузка <br />
+                    отчетов
+                  </div>
+                  <div class="panel-options__item-text">Фрмируйте отчеты по тестам в удобоном формате</div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-right__content"></div>
+          </div>
+          <!-- <div class="panel-row">
+            <div class="panel-left__content">
+              <div id="panel-left-slider" class="panel-left__slider">
+                <div class="panel-left__slider-item">
+                  <div class="panel-left__title">
+                    Панель<br />
+                    управления
+                  </div>
+                </div>
+                <div class="panel-left__slider-item">
+                  <div class="panel-left__title">
+                    Подробная <br />
+                    информация по каждому тесту
+                  </div>
+                </div>
+                <div class="panel-left__slider-item">
+                  <div class="panel-left__title">
+                    Подробная <br />
+                    информация об устройствах
+                  </div>
+                </div>
+                <div class="panel-left__slider-item">
+                  <div class="panel-left__title">Настройка уведомлений</div>
+                </div>
+                <div class="panel-left__slider-item">
+                  <div class="panel-left__title">
+                    Геолокация <br />
+                    приборов <br />
+                    и тестов
+                  </div>
+                </div>
+                <div class="panel-left__slider-item">
+                  <div class="panel-left__title">
+                    API интеграция <br />
+                    с любыми <br />
+                    системами
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-content">
+              <div id="panel-slider" class="panel-slider">
+                <div class="panel-slider__item">
+                  <img src="assets/img/panel-slider/panel-1.png" alt="" />
+                </div>
+                <div class="panel-slider__item">
+                  <img src="assets/img/panel-slider/panel-2.png" alt="" />
+                </div>
+                <div class="panel-slider__item">
+                  <img src="assets/img/panel-slider/panel-3.png" alt="" />
+                </div>
+                <div class="panel-slider__item">
+                  <img src="assets/img/panel-slider/panel-4.png" alt="" />
+                </div>
+                <div class="panel-slider__item">
+                  <img src="assets/img/panel-slider/panel-5.png" alt="" />
+                </div>
+                <div class="panel-slider__item">
+                  <img src="assets/img/panel-slider/panel-6.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="panel-right__content"></div>
+          </div> -->
+        </div>
+      </div>
+    </section>
 
-  <footer id="footer" class="footer"></footer>
+    <section class="prices">
+      <div class="prices-list">
+        <div class="prices-item prices-flipper">
+          <div class="container-fluid">
+            <div class="prices-item__wrapp">
+              <div class="prices-text--mob">Стоимость</div>
+              <div class="prices-col prices-col__photo">
+                <div class="prices-text">Стоимость</div>
+                <img src="assets/img/vanta-s.png" alt="" />
+              </div>
+              <div class="prices-col prices-col__content">
+                <div class="prices-content">
+                  <div class="prices-title">FLIPPER</div>
+                  <div class="prices-desc">Базовый комплект поставки включает:</div>
+                  <ul class="prices-equipment">
+                    <li class="prices-equipment__item">Устройство Flipper</li>
+                    <li class="prices-equipment__item">Монтажный инструмент</li>
+                    <li class="prices-equipment__item">Инструкция</li>
+                  </ul>
+                </div>
+                <div class="prices-price">64 900 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="prices-item prices-panel">
+          <div class="container-fluid">
+            <div class="prices-item__wrapp">
+              <div class="prices-text--mob">Стоимость</div>
+              <div class="prices-col prices-col__photo">
+                <div class="prices-text">Стоимость</div>
+                <img src="assets/img/monitor.png" alt="" />
+              </div>
+              <div class="prices-col prices-col__content">
+                <div class="prices-content">
+                  <div class="prices-title">Панель управления</div>
+                  <div class="prices-desc">Тестовый период 1 месяц с момента активации устройства</div>
+                </div>
+                <div class="prices-price">
+                  2 900 ₽/мес*
+                  <span>при оплате на год, итоговая сумма составляет 34 800 ₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer id="footer" class="footer">
+    <div class="container-fluid">
+      <div class="footer-body">
+        <div class="footer-bg"></div>
+
+        <form action="#" class="footer-form form-contact">
+          <div class="form-title">Защитите своё устройство</div>
+          <div class="form-group">
+            <label class="form-input__label">Укажите номер для связи</label>
+            <div class="form-input__content">
+              <div class="form-input__wrapp">
+                <span class="form-input__error" style="display: none">Не верно указан номер</span>
+                <input class="form-input form-input__tel mask-phone" type="tel" name="phone" placeholder="+7 999 999 99 99" />
+                <div class="form-input__line"></div>
+              </div>
+              <button class="form-button" type="submit">Отправить заявку</button>
+            </div>
+            <label class="form__policy"> Нажимая «Отправить заявку», вы соглашаетесь с <a href="#">пользовательским соглашением</a> </label>
+          </div>
+        </form>
+
+        <div class="form-thank" style="display: none">
+          <img src="assets/img/thank.svg" alt="" />
+          <div class="form-thank__text">
+            Спасибо!
+            <span>Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.</span>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <a href="#" class="footer-logo">
+            <img src="assets/img/logo.svg" alt="" />
+          </a>
+          <a href="#" class="footer-policy policy">Пользовательское соглашение</a>
+          <a href="tel:+88009774422" class="footer-tel contact-tell">8 800 977 44 22</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/libs/slick/slick.min.js"></script>
-    <script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/libs/jquery-mask/jquery.mask.min.js"></script>
     <!-- <script src="assets/libs/wow/wow.min.js"></script> -->
     <script src="assets/js/main.js?v=125"></script>
   </body>
