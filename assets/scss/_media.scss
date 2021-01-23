@@ -92,7 +92,7 @@
     &-left__slider-item {
     }
     &-slider {
-      max-width: 770px;
+      max-width: 620px;
     }
   }
 }
@@ -159,7 +159,11 @@
     position: relative;
     z-index: 1000;
   }
-
+  .panel {
+    &-slider {
+      max-width: 500px;
+    }
+  }
   .footer {
     &-body {
       margin-top: 100px;
@@ -314,6 +318,13 @@
     &-left__slider-item {
     }
     &-slider {
+      margin: 0 auto;
+      .slider-btn {
+        top: 100%;
+      }
+    }
+    &-slider__wrapp {
+      margin: 0 auto;
     }
   }
 }

@@ -1023,6 +1023,10 @@ body {
   max-width: 200px;
 }
 
+.panel-slider__wrapp {
+  margin-right: auto;
+}
+
 .panel-slider {
   max-width: 770px;
 }
@@ -1038,7 +1042,6 @@ body {
 }
 
 .panel-slider__item img {
-  border-radius: 40px;
   width: 100%;
   height: auto;
 }
@@ -1293,7 +1296,7 @@ body {
     max-width: 200px;
   }
   .panel-slider {
-    max-width: 770px;
+    max-width: 620px;
   }
 }
 
@@ -1356,6 +1359,9 @@ body {
   .contact-tell__icon {
     position: relative;
     z-index: 1000;
+  }
+  .panel-slider {
+    max-width: 500px;
   }
   .footer-body {
     margin-top: 100px;
@@ -1491,6 +1497,15 @@ body {
   }
   .panel-options__item {
     width: calc(50% - 20px);
+  }
+  .panel-slider {
+    margin: 0 auto;
+  }
+  .panel-slider .slider-btn {
+    top: 100%;
+  }
+  .panel-slider__wrapp {
+    margin: 0 auto;
   }
 }
 

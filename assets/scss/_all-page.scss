@@ -218,6 +218,9 @@
   }
   &-left__slider-item {
   }
+  &-slider__wrapp {
+    margin-right: auto;
+  }
   &-slider {
     max-width: 770px;
     .slick-list {
@@ -229,7 +232,6 @@
     border-radius: 40px;
     background: rgba(0, 0, 0, 0.25);
     img {
-      border-radius: 40px;
       width: 100%;
       height: auto;
     }
