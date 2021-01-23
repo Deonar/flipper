@@ -28,6 +28,9 @@
         border-right: 1px solid #e5e5e5;
         padding-top: 20px;
       }
+      &:nth-child(4) {
+        padding-top: 20px;
+      }
     }
   }
   .second-title {
@@ -150,6 +153,7 @@
   }
   .specifications {
     margin: auto;
+    margin-top: 50px;
     &__header {
       font-size: 40px;
     }
