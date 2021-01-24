@@ -125,4 +125,7 @@ jQuery(document).ready(function ($) {
     $(this).css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
   });
 
+  //Wow
+  new WOW().init();
+
 });
