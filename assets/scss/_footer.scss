@@ -4,11 +4,12 @@
   &-body {
     position: relative;
     padding-top: 160px;
+
     overflow: hidden;
   }
   &-bg {
     position: absolute;
-    bottom: -50px;
+    bottom: -100px;
     right: 0;
     width: 750px;
     margin-right: 100px;
@@ -29,6 +30,8 @@
     margin: 0 auto;
     position: relative;
     z-index: 10;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   &-policy {
     font-size: 14px;

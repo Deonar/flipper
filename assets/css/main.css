@@ -463,7 +463,7 @@ body {
 .select__item:hover {
   transition: all 0.3s ease;
   background: #dde2ef;
-  color: #002B98;
+  color: #002b98;
 }
 
 .select.is-active .select__body {
@@ -495,19 +495,19 @@ body {
   color: #818181;
   margin-bottom: 20px;
   display: block;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .form-input__error {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   margin-top: 10px;
   transform: translateY(0%);
   color: #dc0a17;
   transition: all 0.3s ease;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   opacity: 0;
 }
@@ -525,6 +525,22 @@ body {
   margin-top: 9px;
 }
 
+.form-input__wrapp.--error:after {
+  content: '!';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #dc0a17;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  border-radius: 50%;
+}
+
 .form-input__wrapp.--error .form-input__line {
   transition: all 0.3s ease;
   width: 100%;
@@ -534,6 +550,17 @@ body {
 .form-input__wrapp.--error .form-input__error {
   transform: translateY(100%);
   opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.form-input__wrapp.--error .form-input:focus {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.form-input__wrapp.--error .form-input:focus + .form-input__line {
+  width: 100%;
+  background: #dc0a17;
   transition: all 0.3s ease;
 }
 
@@ -549,11 +576,12 @@ body {
 }
 
 .form-input {
+  font-family: "Roboto", sans-serif;
   display: block;
   width: 100%;
   max-width: 510px;
-  font-size: 58px;
-  line-height: 60px;
+  font-size: 45px;
+  line-height: 45px;
   color: #000000;
   background: transparent;
   padding: 0;
@@ -565,19 +593,21 @@ body {
 }
 
 .form-input::placeholder {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 45px;
+  line-height: 45px;
   color: #646464;
   opacity: 1;
   background: transparent;
+  font-family: "Roboto", sans-serif;
 }
 
 .form-input::-moz-placeholder, .form-input::-webkit-input-placeholder {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 45px;
+  line-height: 45px;
   color: #646464;
   opacity: 1;
   background: transparent;
+  font-family: "Roboto", sans-serif;
 }
 
 .form-input:focus {
@@ -599,9 +629,9 @@ body {
 .form-button {
   color: #ffffff;
   background: #002b98;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 26px;
-  padding: 27px 58px;
+  padding: 27px 77px;
   border-radius: 3px;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -657,7 +687,7 @@ body {
 
 .form-thank__text span a {
   white-space: nowrap;
-  color: #002B98;
+  color: #002b98;
 }
 
 .form-thank__text span a:hover {
@@ -741,6 +771,7 @@ body {
 .slider-btn.slick-disabled {
   cursor: default;
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .slider-btn.slick-disabled:hover {
@@ -862,6 +893,11 @@ body {
 
 .header-logo img {
   height: 22px;
+}
+
+.header-menu__wrapp {
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 .header-menu {
@@ -1478,7 +1514,7 @@ body {
 }
 
 .prices-panel .prices-desc {
-  color: #818181;
+  color: #000000;
 }
 
 .prices-col {
@@ -1535,7 +1571,7 @@ body {
   position: relative;
   display: block;
   padding-left: 30px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 10px;
@@ -1674,9 +1710,9 @@ body {
 }
 
 .panel-options__item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
   margin-bottom: 10px;
 }
@@ -1810,13 +1846,12 @@ body {
 .information-send .spec .img {
   position: absolute;
   left: 50%;
-  margin-top: 150px;
-  animation: float 6s ease-in-out infinite;
+  margin-top: 200px;
+  transform: translateX(-50%);
 }
 
 .information-send .spec .img__wrapper {
   position: relative;
-  left: -50%;
 }
 
 .information-send .spec .img .signal {
@@ -1916,7 +1951,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   display: inline-block;
-  color: #002B98;
+  color: #002b98;
   font-weight: 500;
 }
 
@@ -2016,7 +2051,7 @@ body {
 
 .footer-bg {
   position: absolute;
-  bottom: -50px;
+  bottom: -100px;
   right: 0;
   width: 750px;
   margin-right: 100px;
@@ -2039,6 +2074,8 @@ body {
   margin: 0 auto;
   position: relative;
   z-index: 10;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .footer-policy {
@@ -2071,7 +2108,7 @@ body {
 }
 
 .btn_blue {
-  background-color: #002B98;
+  background-color: #002b98;
   color: #ffffff;
 }
 
@@ -2230,6 +2267,7 @@ body {
     display: none;
   }
   .information-send {
+    padding-bottom: 0;
     margin: auto;
   }
   .information-send .inner-block {
@@ -2393,7 +2431,7 @@ body {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1160px) {
   .contact-tell {
     display: none;
   }
@@ -2402,7 +2440,7 @@ body {
   }
   .header-menu li a {
     padding: 0 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .header-btn {
     padding: 0 15px;
@@ -2490,6 +2528,10 @@ body {
   }
   .footer-tel {
     display: block !important;
+  }
+  .footer-form {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
