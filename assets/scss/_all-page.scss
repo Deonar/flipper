@@ -133,7 +133,7 @@
   background-position-x: center;
   background-repeat: no-repeat;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -157,7 +157,7 @@
     justify-items: baseline;
     position: relative;
     &:after {
-      content: '';
+      content: "";
       top: 100%;
       left: 50%;
       border: solid transparent;
@@ -212,7 +212,7 @@
     display: grid;
     justify-items: baseline;
     &:after {
-      content: '';
+      content: "";
       top: 100%;
       left: 50%;
       border: solid transparent;
@@ -333,7 +333,8 @@
   }
 
   .vanta {
-    margin-top: 120px;
+    margin-top: 75px;
+    margin-left: 20%;
   }
   .text-heading {
     --animate-duration: 1.5s;
@@ -501,7 +502,7 @@
     margin-bottom: 10px;
     color: #ffffff;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       border-radius: 50%;
@@ -528,7 +529,7 @@
       width: 100%;
       max-width: 230px;
       &::after {
-        content: '*';
+        content: "*";
         position: absolute;
         color: #000;
         left: -10px;
@@ -571,7 +572,7 @@
       position: relative;
       white-space: nowrap;
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 50%;
