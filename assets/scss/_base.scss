@@ -460,8 +460,7 @@ body {
     }
   }
   //start click effect
-  &:before,
-  &.active {
+  &:before {
     content: '';
     background-color: aliceblue;
     border-radius: 50%;
@@ -473,12 +472,11 @@ body {
     left: 0;
     transform: scale(0.001, 0.001);
   }
-  &:focus,
-  &.active {
+  &:active {
     outline: 0;
     color: #fff;
     &:before {
-      animation: effect_dylan 0.8s forwards;
+      animation: effect_dylan 0.3s forwards;
     }
   }
 }

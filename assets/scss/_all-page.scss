@@ -736,11 +736,11 @@
       left: 50%;
       margin-top: 150px;
       animation: float 6s ease-in-out infinite;
-      &__wrapper{
+      &__wrapper {
         position: relative;
         left: -50%;
       }
-      .signal{
+      .signal {
         position: absolute;
         top: 0;
       }
@@ -869,5 +869,10 @@
     height: 700px;
     width: 630px;
     margin-right: 0;
+    bottom: 0;
+  }
+  .footer-body {
+    padding-top: 0 !important;
+    overflow: visible !important;
   }
 }
