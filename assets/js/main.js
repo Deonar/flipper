@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
   $('.mask-phone').mask('+7 (999) 999-99-99');
 
 
-  $("#client-phone").on( 'blur input',function () {
+  $("#client-phone").on('blur input', function () {
 
     if ($(this).val().length >= 18) {
       $(this).closest(".form-input__wrapp").removeClass("--error");
@@ -70,6 +70,7 @@ jQuery(document).ready(function ($) {
 
   //======================== SLICK SLIDERS
   //===========================  front-page Slider
+
   $('#panel-left-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -89,8 +90,6 @@ jQuery(document).ready(function ($) {
     infinite: false,
     asNavFor: '#panel-left-slider',
   });
-  $('#panel-slider')[0].slick.refresh();
-
   //======================== Select
   let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
@@ -138,31 +137,33 @@ jQuery(document).ready(function ($) {
     $('.parallax-js').css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
   });
 
-   //Wow
-   new WOW().init();
+  //Wow
+  new WOW().init();
 
-   let scrollOptions = {
-     scrollBot: $('.how-works').offset().top,
-     scrollTop: $('.text.vanta').offset().top,
-     textBlock: $('.block-text-js'),
-     scHeight: $(window).height(),
-   }
- 
-   let scrollToElemBot = scrollOptions['scrollBot'] - scrollOptions['scHeight'] - 200,
-       scrollToElemTop = scrollOptions['scrollTop'] - scrollOptions['scHeight'] + 200;
-   var windowWidth = $('body').innerWidth();
-   if (windowWidth > 1439) {
-     $(document).scroll(function () {
-       var winScrollTop = $(this).scrollTop();
-       if (winScrollTop > scrollToElemBot) {
-         $('.flipper').addClass('move');
-         $('.block-text-js').fadeIn(1000);
-         $('.img-arrow').fadeOut(1000);
-       } else if (winScrollTop < scrollToElemTop ){
-        $('.flipper').removeClass('move');
-        $('.block-text-js').fadeOut(1000);
-        $('.img-arrow').fadeIn(1000);			 
-       }
-     })
-   }
+  if ($('*').is('#how-works')) {
+    let scrollOptions = {
+      scrollBot: $('.how-works').offset().top,
+      scrollTop: $('.text.vanta').offset().top,
+      textBlock: $('.block-text-js'),
+      scHeight: $(window).height(),
+    }
+
+    let scrollToElemBot = scrollOptions['scrollBot'] - scrollOptions['scHeight'] - 200,
+      scrollToElemTop = scrollOptions['scrollTop'] - scrollOptions['scHeight'] + 200;
+    var windowWidth = $('body').innerWidth();
+    if (windowWidth > 1439) {
+      $(document).scroll(function () {
+        var winScrollTop = $(this).scrollTop();
+        if (winScrollTop > scrollToElemBot) {
+          $('.flipper').addClass('move');
+          $('.block-text-js').fadeIn(1000);
+          $('.img-arrow').fadeOut(1000);
+        } else if (winScrollTop < scrollToElemTop) {
+          $('.flipper').removeClass('move');
+          $('.block-text-js').fadeOut(1000);
+          $('.img-arrow').fadeIn(1000);
+        }
+      })
+    }
+  }
 });
