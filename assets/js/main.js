@@ -11,6 +11,26 @@ jQuery(document).ready(function ($) {
     $('#mobMenu').removeClass('active');
   });
 
+  //=================== scroll to page
+  $('.scrollto').on('click', function () {
+    let href = $(this).attr('href');
+
+    $('html, body').animate(
+      {
+        scrollTop: $(href).offset().top,
+      },
+      {
+        duration: 370, // по умолчанию «400»
+        easing: 'linear', // по умолчанию «swing»
+      }
+    );
+    if ($(window).width() < 768) {
+      $('html, body').animate({
+        scrollTop: $(href).offset().top,
+      });
+    }
+    return false;
+  });
   // ======================== MASK
   $('.mask-phone').mask('+7 (999) 999-99-99');
 

@@ -737,7 +737,7 @@
       left: 50%;
       transform: translateX(-50%);
       margin-top: 150px;
-      .signal{
+      .signal {
         position: absolute;
         top: 0;
       }
@@ -861,6 +861,7 @@
 }
 
 .footer-404 {
+  overflow: visible !important;
   .footer-bg {
     height: 700px;
     width: 630px;
