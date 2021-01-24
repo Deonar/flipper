@@ -132,35 +132,37 @@ jQuery(document).ready(function ($) {
   });
   //======================== Select End
 
-  $('.parallax-js').mousemove(function (event) {
+  $('body').mousemove(function (event) {
     var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
     var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
-    $(this).css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
+    $('.parallax-js').css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
   });
 
-  //Wow
-  new WOW().init();
+   //Wow
+   new WOW().init();
 
-
-  let scrollOptions = {
-    scrollBot: $('.how-works').offset().top,
-    scrollTop: $('.text.vanta').offset().top,
-    scHeight: $(window).height(),
-  }
-
-  let scrollToElemBot = scrollOptions['scrollBot'] - scrollOptions['scHeight'] - 200,
-    scrollToElemTop = scrollOptions['scrollTop'] - scrollOptions['scHeight'] + 200;
-  var windowWidth = $('body').innerWidth();
-  if (windowWidth > 1439) {
-    $(document).scroll(function () {
-      var winScrollTop = $(this).scrollTop();
-      console.log(`Скролл наверх - ${scrollToElemTop - 150}`);
-      console.log(`Скролл вниз - ${scrollToElemBot + 150}`);
-      if (winScrollTop > scrollToElemBot) {
-        $('.flipper').addClass('move');
-      } else if (winScrollTop < scrollToElemTop) {
+   let scrollOptions = {
+     scrollBot: $('.how-works').offset().top,
+     scrollTop: $('.text.vanta').offset().top,
+     textBlock: $('.block-text-js'),
+     scHeight: $(window).height(),
+   }
+ 
+   let scrollToElemBot = scrollOptions['scrollBot'] - scrollOptions['scHeight'] - 200,
+       scrollToElemTop = scrollOptions['scrollTop'] - scrollOptions['scHeight'] + 200;
+   var windowWidth = $('body').innerWidth();
+   if (windowWidth > 1439) {
+     $(document).scroll(function () {
+       var winScrollTop = $(this).scrollTop();
+       if (winScrollTop > scrollToElemBot) {
+         $('.flipper').addClass('move');
+         $('.block-text-js').fadeIn(1000);
+         $('.img-arrow').fadeOut(1000);
+       } else if (winScrollTop < scrollToElemTop ){
         $('.flipper').removeClass('move');
-      }
-    })
-  }
+        $('.block-text-js').fadeOut(1000);
+        $('.img-arrow').fadeIn(1000);			 
+       }
+     })
+   }
 });
