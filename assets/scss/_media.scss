@@ -137,7 +137,7 @@
       width: 67vw;
       max-width: 649px;
       margin: auto;
-    display: block;
+      display: block;
     }
   }
   .about-cap img {
@@ -323,7 +323,7 @@
     &-left__slider-item {
     }
     &-slider {
-      max-width: 770px;
+      max-width: 620px;
     }
   }
 }
@@ -390,7 +390,11 @@
     position: relative;
     z-index: 1000;
   }
-
+  .panel {
+    &-slider {
+      max-width: 500px;
+    }
+  }
   .footer {
     &-body {
       margin-top: 100px;
@@ -526,7 +530,6 @@
       font-size: 20px;
       line-height: 26px;
     }
-
     &-left__content {
       max-width: 100%;
       min-width: 100%;
@@ -536,7 +539,6 @@
       line-height: 16px;
       margin-bottom: 20px;
     }
-
     &-options__item {
       width: calc(50% - 20px);
     }
@@ -545,6 +547,19 @@
     &-left__slider-item {
     }
     &-slider {
+      margin: 0 auto;
+      .slider-btn {
+        top: 100%;
+      }
+      .slider-btn__prev {
+        left: 0px;
+      }
+      .slider-btn__next {
+        right: 0px;
+      }
+    }
+    &-slider__wrapp {
+      margin: 0 auto;
     }
   }
 }
