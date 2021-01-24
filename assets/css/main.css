@@ -596,7 +596,7 @@ body {
 .form-input {
   display: block;
   width: 100%;
-  max-width: 500px;
+  max-width: 510px;
   font-size: 58px;
   line-height: 60px;
   color: #000000;
@@ -833,6 +833,66 @@ body {
 .slider-btn.slick-disabled:hover {
   opacity: 0.6;
   background: none;
+}
+
+.slider-btn:before, .slider-btn.active {
+  content: '';
+  background-color: aliceblue;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scale(0.001, 0.001);
+          transform: scale(0.001, 0.001);
+}
+
+.slider-btn:focus, .slider-btn.active {
+  outline: 0;
+  color: #fff;
+}
+
+.slider-btn:focus:before, .slider-btn.active:before {
+  -webkit-animation: effect_dylan 0.8s forwards;
+          animation: effect_dylan 0.8s forwards;
+}
+
+@-webkit-keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+@keyframes effect_dylan {
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
 }
 
 .slider-btn__prev {
@@ -2191,6 +2251,10 @@ body {
   max-width: 250px;
 }
 
+.footer-404 {
+  overflow: visible !important;
+}
+
 .footer-404 .footer-bg {
   height: 700px;
   width: 630px;
@@ -2199,6 +2263,7 @@ body {
 
 .footer {
   background: #fff;
+  overflow: hidden;
 }
 
 .footer-body {

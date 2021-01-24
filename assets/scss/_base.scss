@@ -283,7 +283,7 @@ body {
   &-input {
     display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 510px;
     font-size: 58px;
     line-height: 60px;
     color: $black;
@@ -459,7 +459,45 @@ body {
       background: none;
     }
   }
+  //start click effect
+  &:before,
+  &.active {
+    content: '';
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.001, 0.001);
+  }
+  &:focus,
+  &.active {
+    outline: 0;
+    color: #fff;
+    &:before {
+      animation: effect_dylan 0.8s forwards;
+    }
+  }
 }
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
 .slider-btn__prev {
   transform: translateY(-50%) rotate(45deg);
   left: -80px;
