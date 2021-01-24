@@ -15,15 +15,12 @@ jQuery(document).ready(function ($) {
   $('.scrollto').on('click', function () {
     let href = $(this).attr('href');
 
-    $('html, body').animate(
-      {
-        scrollTop: $(href).offset().top,
-      },
-      {
-        duration: 370, // по умолчанию «400»
-        easing: 'linear', // по умолчанию «swing»
-      }
-    );
+    $('html, body').animate({
+      scrollTop: $(href).offset().top,
+    }, {
+      duration: 370, // по умолчанию «400»
+      easing: 'linear', // по умолчанию «swing»
+    });
     if ($(window).width() < 768) {
       $('html, body').animate({
         scrollTop: $(href).offset().top,
@@ -33,6 +30,21 @@ jQuery(document).ready(function ($) {
   });
   // ======================== MASK
   $('.mask-phone').mask('+7 (999) 999-99-99');
+
+
+  $("#client-phone").on( 'blur input',function () {
+
+    if ($(this).val().length >= 18) {
+      $(this).closest(".form-input__wrapp").removeClass("--error");
+    } else {
+      $(this).closest(".form-input__wrapp").addClass("--error");
+    }
+  });
+  $("#form-action").submit(function (e) {
+    e.preventDefault();
+    $(this).hide();
+    $('#form-thank').show();
+  });
 
   //scroll-header-menu
   var scrollPos = 0;
@@ -128,4 +140,26 @@ jQuery(document).ready(function ($) {
   //Wow
   new WOW().init();
 
+
+  let scrollOptions = {
+    scrollBot: $('.how-works').offset().top,
+    scrollTop: $('.text.vanta').offset().top,
+    scHeight: $(window).height(),
+  }
+
+  let scrollToElemBot = scrollOptions['scrollBot'] - scrollOptions['scHeight'] - 200,
+    scrollToElemTop = scrollOptions['scrollTop'] - scrollOptions['scHeight'] + 200;
+  var windowWidth = $('body').innerWidth();
+  if (windowWidth > 1439) {
+    $(document).scroll(function () {
+      var winScrollTop = $(this).scrollTop();
+      console.log(`Скролл наверх - ${scrollToElemTop - 150}`);
+      console.log(`Скролл вниз - ${scrollToElemBot + 150}`);
+      if (winScrollTop > scrollToElemBot) {
+        $('.flipper').addClass('move');
+      } else if (winScrollTop < scrollToElemTop) {
+        $('.flipper').removeClass('move');
+      }
+    })
+  }
 });
