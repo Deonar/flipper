@@ -317,6 +317,20 @@
   }
 }
 
+@media (max-width: 1360px) {
+  .header {
+    &-menu li a {
+      padding: 0 10px;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .header {
+    &-logo {
+      max-width: 250px;
+    }
+  }
+}
 @media (max-width: 1160px) {
   .contact-tell {
     display: none;
@@ -325,13 +339,8 @@
     }
   }
   .header {
-    &-menu li a {
-      padding: 0 10px;
-      font-size: 14px;
-    }
-    &-btn {
-      padding: 0 15px;
-      line-height: 35px;
+    &-logo {
+      max-width: 120px;
     }
   }
   .prices {

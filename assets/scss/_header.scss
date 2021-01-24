@@ -35,13 +35,13 @@
     justify-content: space-between;
   }
   &-logo {
+    width: 100%;
+    max-width: 350px;
     img {
       height: 22px;
     }
   }
   &-menu__wrapp {
-    margin-left: auto;
-    margin-right: 20px;
   }
   &-menu {
     display: flex;
@@ -68,10 +68,10 @@
   }
   &-btn {
     display: inline-block;
-    padding: 0px 30px;
+    padding: 0px 10px;
     font-weight: bold;
     font-size: 12px;
-    line-height: 45px;
+    line-height: 40px;
     text-align: center;
     transition: all 0.3s ease;
     color: #fff;
@@ -89,8 +89,8 @@
 }
 .contact-tell {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 22px;
   color: #000000;
   &__icon {
     display: flex;
