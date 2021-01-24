@@ -233,16 +233,16 @@ body {
   }
 
   &-input__error {
-    display: none;
     position: absolute;
     bottom: 0;
     left: 0;
     margin-top: 10px;
-    transform: translateY(100%);
+    transform: translateY(0%);
     color: #dc0a17;
     transition: all 0.3s ease;
     font-size: 14px;
     line-height: 18px;
+    opacity: 0;
   }
   &-input__content {
     display: flex;
@@ -262,10 +262,10 @@ body {
           width: 100%;
           background: #dc0a17;
         }
-
         &__error {
+          transform: translateY(100%);
+          opacity: 1;
           transition: all 0.3s ease;
-          display: block !important;
         }
       }
     }
@@ -347,6 +347,7 @@ body {
     line-height: 16px;
     color: #818181;
     a {
+      white-space: nowrap;
       color: #00237d;
       &:hover {
         text-decoration: underline;
@@ -373,6 +374,7 @@ body {
       line-height: 22px;
       color: #818181;
       a {
+        white-space: nowrap;
         color: $blue;
         &:hover {
           text-decoration: underline;
