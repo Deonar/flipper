@@ -1126,7 +1126,7 @@ body {
   margin: 0 10px;
 }
 
-.flipper-img {
+.levitation {
   -webkit-animation: float 6s ease-in-out infinite;
           animation: float 6s ease-in-out infinite;
 }
@@ -1179,8 +1179,6 @@ body {
   -webkit-transform: scale(1);
           transform: scale(1);
   position: absolute;
-  -webkit-transition: 1s;
-  transition: 1s;
   max-width: 1047px;
 }
 
@@ -2039,9 +2037,14 @@ body {
 .information-send .spec .img {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   margin-top: 150px;
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+}
+
+.information-send .spec .img__wrapper {
+  position: relative;
+  left: -50%;
 }
 
 .information-send .spec .img .signal {
@@ -2200,7 +2203,8 @@ body {
 
 .footer-body {
   position: relative;
-  margin-top: 160px;
+  padding-top: 160px;
+  overflow: hidden;
 }
 
 .footer-bg {
@@ -2209,7 +2213,7 @@ body {
   right: 0;
   width: 750px;
   margin-right: 100px;
-  height: 110%;
+  height: 90%;
   background: url(../img/footer-bg.svg) bottom right no-repeat;
   background-size: contain;
 }

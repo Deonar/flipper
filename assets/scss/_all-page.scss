@@ -26,7 +26,7 @@
     margin: 0 10px;
   }
 }
-.flipper-img {
+.levitation {
   animation: float 6s ease-in-out infinite;
 }
 @keyframes float {
@@ -51,7 +51,6 @@
   img {
     transform: scale(1);
     position: absolute;
-    transition: 1s;
     max-width: 1047px;
   }
 }
@@ -735,8 +734,12 @@
     .img {
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
       margin-top: 150px;
+      animation: float 6s ease-in-out infinite;
+      &__wrapper{
+        position: relative;
+        left: -50%;
+      }
       .signal{
         position: absolute;
         top: 0;

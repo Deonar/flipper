@@ -74,56 +74,60 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="main-title">
-      <h1 class="hidden">FLIPPER</h1>
-      <img src="assets/img/title-flipper.svg" alt="" />
-    </div>
+  <div id="main-block">
+    <div class="container">
+      <div class="main-title">
+        <h1 class="hidden">FLIPPER</h1>
+        <img src="assets/img/title-flipper.svg" alt="" />
+      </div>
 
-    <div class="flipper-img main-img">
-      <img src="assets/img/flipper-main.png" />
-    </div>
+      <div class="main-img levitation">
+        <img src="assets/img/flipper-main.png" class="parallax-js"/>
+      </div>
 
-    <div class="specifications">
-      <div class="specifications__item">
-        <div class="specifications__header">
-          72
-          <span class="ml-5">часа</span>
+      <div class="specifications">
+        <div class="specifications__item">
+          <div class="specifications__header">
+            72
+            <span class="ml-5">часа</span>
+          </div>
+          <div class="specifications__description">
+            автономной <br />
+            работы
+          </div>
         </div>
-        <div class="specifications__description">
-          автономной <br />
-          работы
+        <div class="specifications__item">
+          <div class="specifications__header">IP-68</div>
+          <div class="specifications__description">
+            стандарт<br />
+            защиты
+          </div>
+        </div>
+        <div class="specifications__item">
+          <div class="specifications__header">LTE</div>
+          <div class="specifications__description">
+            работает в сетях<br />
+            2G / 3G / LTE
+          </div>
+        </div>
+        <div class="specifications__item">
+          <div class="specifications__header">GPS</div>
+          <div class="specifications__description">
+            трекинг<br />
+            местоположения
+          </div>
         </div>
       </div>
-      <div class="specifications__item">
-        <div class="specifications__header">IP-68</div>
-        <div class="specifications__description">
-          стандарт<br />
-          защиты
-        </div>
-      </div>
-      <div class="specifications__item">
-        <div class="specifications__header">LTE</div>
-        <div class="specifications__description">
-          работает в сетях<br />
-          2G / 3G / LTE
-        </div>
-      </div>
-      <div class="specifications__item">
-        <div class="specifications__header">GPS</div>
-        <div class="specifications__description">
-          трекинг<br />
-          местоположения
-        </div>
+
+      <div class="btn-wrapper">
+        <a href="#" class="btn btn_blue"> Оформить заказ </a>
+        <a href="#" class="btn btn_white"> Узнать больше </a>
       </div>
     </div>
-
-    <div class="btn-wrapper">
-      <a href="#" class="btn btn_blue"> Оформить заказ </a>
-      <a href="#" class="btn btn_white"> Узнать больше </a>
-    </div>
-
-    <div class="about-flipper" id="about-flipper">
+  </div>
+  
+  <div class="about-flipper" id="about-flipper">
+    <div class="container">
       <div class="description-device">
         <div class="about-product">
           <div class="second-title">
@@ -444,9 +448,9 @@
             </div>
           </div>
           <div class="img">
-            <div>
+            <div class="img__wrapper levitation">
               <div>
-                <img src="assets/img/info-flipper.png" class="flipper-sideways q-mt-xl visible" />
+                <img src="assets/img/info-flipper.png" class="flipper-sideways " />
               </div>
               <img src="assets/img/info-signal.png" class="signal" />
             </div>
@@ -652,9 +656,9 @@
   <footer id="footer" class="footer">
     <div class="container-fluid">
       <div class="footer-body">
-        <div class="footer-bg"></div>
+        <div class="footer-bg levitation"></div>
 
-        <form action="#" class="footer-form form-contact" >
+        <form action="#" class="footer-form form-contact">
           <div class="form-title">
             Защитите <br />
             своё устройство

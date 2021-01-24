@@ -58,6 +58,7 @@ jQuery(document).ready(function ($) {
   });
   $('#panel-slider')[0].slick.refresh();
 
+  //======================== Select
   let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
     let selectItem = document.querySelectorAll('.select__item');
@@ -96,5 +97,12 @@ jQuery(document).ready(function ($) {
       $('.select').removeClass('is-active');
     }
   });
-  //end
+  //======================== Select End
+
+  $('.parallax-js').mousemove(function (event) {
+    var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+    var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
+    $(this).css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
+  });
+
 });
