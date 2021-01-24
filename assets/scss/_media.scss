@@ -137,7 +137,7 @@
       width: 67vw;
       max-width: 649px;
       margin: auto;
-    display: block;
+      display: block;
     }
   }
   .about-cap img {
@@ -530,7 +530,6 @@
       font-size: 20px;
       line-height: 26px;
     }
-
     &-left__content {
       max-width: 100%;
       min-width: 100%;
@@ -540,7 +539,6 @@
       line-height: 16px;
       margin-bottom: 20px;
     }
-
     &-options__item {
       width: calc(50% - 20px);
     }
@@ -552,6 +550,12 @@
       margin: 0 auto;
       .slider-btn {
         top: 100%;
+      }
+      .slider-btn__prev {
+        left: 0px;
+      }
+      .slider-btn__next {
+        right: 0px;
       }
     }
     &-slider__wrapp {
