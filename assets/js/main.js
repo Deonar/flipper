@@ -133,8 +133,8 @@ jQuery(document).ready(function ($) {
   //======================== Select End
 
   $('body').mousemove(function (event) {
-    var moveX = ($(window).width() / 2 - event.pageX) * 0.1;
-    var moveY = ($(window).height() / 2 - event.pageY) * 0.1;
+    var moveX = ($(window).width() / 2 - event.clientX) * 0.1;
+    var moveY = ($(window).height() / 2 - event.clientY) * 0.1;
     $('.parallax-js').css('transform', 'translate(' + moveX + 'px, ' + moveY + 'px)');
   });
 

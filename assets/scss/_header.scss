@@ -37,6 +37,8 @@
   &-logo {
     width: 100%;
     max-width: 350px;
+    display: flex;
+    align-items: center;
     img {
       height: 22px;
     }
@@ -104,8 +106,8 @@
 
 //Burger
 .header-burger {
-  width: 16px;
-  height: 13px;
+  width: 18px;
+  height: 9px;
   position: relative;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
@@ -115,20 +117,18 @@
   span {
     display: block;
     position: absolute;
-    height: 1px;
+    height: 2px;
     width: 100%;
     background: #000;
     opacity: 1;
-    right: 0;
+    left: 0;
     transition: 0.25s ease-in-out;
     &:nth-child(1) {
       top: 0;
     }
     &:nth-child(2) {
       top: 6px;
-    }
-    &:nth-child(3) {
-      bottom: 0;
+      max-width: 50%;
     }
   }
 

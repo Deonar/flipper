@@ -269,6 +269,7 @@
 
   .blue-point {
     left: 0;
+    margin: 0 -15px;
   }
   .red-point {
     display: none;
@@ -446,6 +447,13 @@
 }
 @media (max-width: 900px) {
   .header {
+    &-container{
+      padding: 20px 30px;
+    }
+    &__select-lang{
+      margin-right: 0;
+      padding: 25px 0 5px 0px;
+    }
     &__select-lang,
     &-btn {
       display: none;
@@ -457,6 +465,8 @@
       display: block;
     }
     &-logo {
+      text-align: center;
+      display: flex;
       position: relative;
       z-index: 1000;
     }
@@ -502,6 +512,7 @@
     &__select-lang {
       border-right: 0;
     }
+
   }
   .contact-tell__icon {
     position: relative;
@@ -735,6 +746,9 @@
     &-slider__wrapp {
       margin: 0 auto;
     }
+  }
+  .framing{
+    height: 400px;
   }
 }
 
