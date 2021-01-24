@@ -40,6 +40,7 @@ jQuery(document).ready(function ($) {
       $(this).closest(".form-input__wrapp").addClass("--error");
     }
   });
+
   $("#form-action").submit(function (e) {
     e.preventDefault();
     $(this).hide();

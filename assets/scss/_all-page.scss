@@ -736,10 +736,9 @@
       position: absolute;
       left: 50%;
       margin-top: 150px;
-      animation: float 6s ease-in-out infinite;
+      transform: translateX(-50%);
       &__wrapper {
         position: relative;
-        left: -50%;
       }
       .signal {
         position: absolute;
