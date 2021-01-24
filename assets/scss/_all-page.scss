@@ -764,6 +764,7 @@
 }
 .privacy-policy {
   padding-top: 200px;
+  background: #fff;
   &__title {
     font-weight: 400;
     font-size: 34px;
@@ -817,6 +818,33 @@
       line-height: 22px;
       color: #818181;
       margin-bottom: 20px;
+    }
+    a {
+      font-size: 16px;
+      line-height: 22px;
+      display: inline-block;
+      color: $blue;
+      font-weight: 500;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    ul {
+      margin-bottom: 20px;
+      li {
+        padding-left: 20px;
+        position: relative;
+        font-size: 16px;
+        line-height: 22px;
+        color: #818181;
+        &::after {
+          content: '-';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
     }
   }
 }
