@@ -489,8 +489,8 @@ body {
   color: #818181;
   margin-bottom: 20px;
   display: block;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .form-input__error {
@@ -509,7 +509,7 @@ body {
 .form-input__content {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .form-input__wrapp {
@@ -560,7 +560,7 @@ body {
 .form-input::placeholder {
   font-size: 60px;
   line-height: 60px;
-  color: #d8d8d8;
+  color: #646464;
   opacity: 1;
   background: transparent;
 }
@@ -568,7 +568,7 @@ body {
 .form-input::-moz-placeholder, .form-input::-webkit-input-placeholder {
   font-size: 60px;
   line-height: 60px;
-  color: #d8d8d8;
+  color: #646464;
   opacity: 1;
   background: transparent;
 }
@@ -624,6 +624,7 @@ body {
 
 .form-thank {
   display: flex;
+  align-items: flex-start;
 }
 
 .form-thank img {
@@ -635,6 +636,7 @@ body {
   line-height: 48px;
   width: 100%;
   max-width: 330px;
+  color: #000;
 }
 
 .form-thank__text span {
@@ -643,6 +645,19 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #818181;
+}
+
+.form-thank__text span a {
+  color: #002B98;
+}
+
+.form-thank__text span a:hover {
+  text-decoration: underline;
+}
+
+.form-thank__text span span {
+  display: block;
+  margin-top: 10px;
 }
 
 .slick-dots {
@@ -787,7 +802,7 @@ body {
 .header-container {
   position: relative;
   width: 100%;
-  max-width: 1440px;
+  max-width: 2440px;
   padding: 8px 30px;
   margin: 0 auto;
 }
@@ -1575,6 +1590,8 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #818181;
+  width: 100%;
+  max-width: 470px;
 }
 
 .panel-right__content {
@@ -1663,10 +1680,11 @@ body {
 
 .footer-bg {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   right: 0;
-  width: 630px;
-  height: 100%;
+  width: 750px;
+  margin-right: 100px;
+  height: 110%;
   background: url(../img/footer-bg.svg) bottom right no-repeat;
   background-size: contain;
 }
@@ -1682,13 +1700,15 @@ body {
 }
 
 .footer-form {
-  max-width: 800px;
   margin: 0 auto;
   position: relative;
   z-index: 10;
 }
 
 .footer-policy {
+  font-size: 14px;
+  line-height: 16px;
+  color: #818181;
   margin: 0 20px;
 }
 
@@ -2116,6 +2136,7 @@ body {
   }
   .footer-bg {
     width: 100%;
+    margin-right: 0;
   }
   .footer-bottom {
     flex-direction: column-reverse;
@@ -2174,6 +2195,8 @@ body {
   }
   .form-thank {
     flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
   }
   .form-thank img {
     margin-right: 0px;

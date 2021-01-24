@@ -401,6 +401,7 @@
     }
     &-bg {
       width: 100%;
+      margin-right: 0;
     }
     &-bottom {
       flex-direction: column-reverse;
@@ -463,6 +464,8 @@
     }
     &-thank {
       flex-direction: column;
+      max-width: 250px;
+      margin: 0 auto;
       img {
         margin-right: 0px;
         margin-bottom: 20px;

@@ -6,10 +6,11 @@
   }
   &-bg {
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     right: 0;
-    width: 630px;
-    height: 100%;
+    width: 750px;
+    margin-right: 100px;
+    height: 110%;
     background: url(../img/footer-bg.svg) bottom right no-repeat;
     background-size: contain;
   }
@@ -23,12 +24,14 @@
     margin-top: 100px;
   }
   &-form {
-    max-width: 800px;
     margin: 0 auto;
     position: relative;
     z-index: 10;
   }
   &-policy {
+    font-size: 14px;
+    line-height: 16px;
+    color: #818181;
     margin: 0 20px;
     &:hover {
       text-decoration: underline;
