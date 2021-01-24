@@ -1840,6 +1840,7 @@ body {
 
 .privacy-policy {
   padding-top: 200px;
+  background: #fff;
 }
 
 .privacy-policy__title {
@@ -1906,6 +1907,38 @@ body {
   line-height: 22px;
   color: #818181;
   margin-bottom: 20px;
+}
+
+.privacy-policy__paragraph a {
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  color: #002B98;
+  font-weight: 500;
+}
+
+.privacy-policy__paragraph a:hover {
+  text-decoration: underline;
+}
+
+.privacy-policy__paragraph ul {
+  margin-bottom: 20px;
+}
+
+.privacy-policy__paragraph ul li {
+  padding-left: 20px;
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  color: #818181;
+}
+
+.privacy-policy__paragraph ul li::after {
+  content: '-';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .page-404__wrapp {
