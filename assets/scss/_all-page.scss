@@ -789,11 +789,17 @@
   }
   &__body {
     display: flex;
+    position: relative;
   }
   &__menu-body {
     width: 100%;
     max-width: 200px;
     margin-right: 50px;
+  }
+  &__menu {
+    position: sticky;
+    top: 80px;
+    left: 0;
   }
   &__menu-item {
     margin-bottom: 20px;
